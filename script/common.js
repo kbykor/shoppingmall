@@ -21,7 +21,13 @@ productModal.addEventListener('click', (event) => {
 
 for(let product of new_product_list) {
   product.addEventListener('click', function(){
-    productModal.querySelector('')
+    let src = this.querySelector('.img_wrap > img').getAttribute('src');
+    let title = this.querySelector('.txt_wrap > a > h4').innerHTML;
+    let price = this.querySelector('.price').innerHTML;
+    productModal.querySelector('.img_wrap > img').setAttribute('src', src);
+    productModal.querySelector('.txt_wrap > h4').innerHTML = title;
+    productModal.querySelector('.txt_wrap > .price').innerHTML = price;
+
     productModal.showModal();
     document.querySelector('body').style.overflow = 'hidden';
   });
