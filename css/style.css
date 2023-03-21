@@ -265,6 +265,7 @@ header a {
 .new_items .new_product > li > a > .img_wrap {}
 .new_items .new_product > li > a > .img_wrap > img {
   width: 100%;
+  height: 510px;
 }
 .new_items .new_product > li > .txt_wrap {
   display: flex;
